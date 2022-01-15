@@ -1,1 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2022-01-15T13:00:51.658Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.113 Safari/537.36" version="16.2.6" etag="aSFSM_wNRXMGECVzDoaD" type="github"><diagram id="ngZUWI3o8an-m7_MOq2Z">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-15T13:13:34.437Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.113 Safari/537.36" etag="u0BNtmE2ydi4ocAogkxq" version="16.2.6" type="github">
+  <diagram id="ngZUWI3o8an-m7_MOq2Z" name="Timer">
+    <mxGraphModel dx="435" dy="257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h9hnGe0TKs4BrtUfeZlk-10" value="Timer" style="rounded=0;whiteSpace=wrap;html=1;horizontal=1;fontFamily=Comfortaa;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DComfortaa;" vertex="1" parent="1">
+          <mxGeometry x="460" y="420" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h9hnGe0TKs4BrtUfeZlk-11" value="Click start to start the timer" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comfortaa;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DComfortaa;" vertex="1" parent="1">
+          <mxGeometry x="460" y="480" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h9hnGe0TKs4BrtUfeZlk-12" value="Tick down every second" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comfortaa;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DComfortaa;" vertex="1" parent="1">
+          <mxGeometry x="460" y="510" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h9hnGe0TKs4BrtUfeZlk-13" value="User can stop" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comfortaa;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DComfortaa;" vertex="1" parent="1">
+          <mxGeometry x="460" y="540" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h9hnGe0TKs4BrtUfeZlk-14" value="Click start again still tick down the previous number or the number user just have typed into" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comfortaa;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DComfortaa;" vertex="1" parent="1">
+          <mxGeometry x="460" y="570" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h9hnGe0TKs4BrtUfeZlk-15" value="When the number hit 0 it stop" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Comfortaa;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DComfortaa;" vertex="1" parent="1">
+          <mxGeometry x="460" y="630" width="170" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
