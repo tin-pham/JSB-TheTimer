@@ -1,0 +1,25 @@
+.timer {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.timer-svg {
+  position: absolute;
+}
+
+.timer-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.timer-input {
+  width: 80%;
+  border: none;
+  font-size: 1.5rem;
+  text-align: center;
+}

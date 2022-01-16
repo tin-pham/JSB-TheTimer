@@ -4,12 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./index.js" defer></script>
+    <script src="./index.js" type="module" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
     <title>Timer</title>
   </head>
   <body>
-    <input type="number" class="timer-input" />
-    <button class="start-button">Start</button>
-    <button class="pause-button">Pause</button>
+    <div class="timer">
+      <svg class="timer-svg" width="400" height="400">
+        <circle
+          cx="200"
+          cy="200"
+          r="150"
+          fill="transparent"
+          stroke="black"
+          stroke-width="15"
+          stroke-dasharray="942"
+          stroke-dashoffset="0"
+          transform="rotate(-90 200 200)"
+        ></circle>
+      </svg>
+      <div class="timer-group">
+        <input type="number" value="10" class="timer-input" />
+        <button class="start-button">Start</button>
+        <button class="pause-button">Pause</button>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,36 +1,32 @@
-class Timer {
-  constructor(timeInput, startButton, pauseButton) {
-    this.timeInput = timeInput;
-    this.startButton = startButton;
-    this.pauseButton = pauseButton;
-
-    this.startButton.addEventListener('click', this.start);
-    this.pauseButton.addEventListener('click', this.pause);
-  }
-
-  start = () => {
-    this.intervalId = setInterval(this.tick, 1000);
-  };
-
-  tick = () => {
-    if (this.currentTime <= 0) return;
-    this.currentTime = this.currentTime - 1;
-  };
-
-  pause = () => {
-    clearInterval(this.intervalId);
-  };
-
-  get currentTime() {
-    return parseInt(this.timeInput.value);
-  }
-
-  set currentTime(time) {
-    this.timeInput.value = time;
-  }
-}
-
+import Timer from './Timer.js';
 const timeInput = document.querySelector('.timer-input');
 const startButton = document.querySelector('.start-button');
 const pauseButton = document.querySelector('.pause-button');
-const timer = new Timer(timeInput, startButton, pauseButton);
+
+const timerSvg = document.querySelector('.timer-svg');
+const circle = timerSvg.querySelector('circle');
+
+let duration;
+const radius = circle.getAttribute('r');
+const perimeter = 2 * Math.PI * radius;
+const timer = new Timer(timeInput, startButton, pauseButton, {
+  onStart(totalTime) {
+    duration = totalTime;
+    console.log('Start the timer');
+  },
+
+  onTick(currentTime) {
+    circle.setAttribute(
+      'stroke-dashoffset',
+      (perimeter * currentTime) / duration - perimeter
+    );
+  },
+
+  onPause() {
+    console.log('Paused the timer');
+  },
+});
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+  return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+};
